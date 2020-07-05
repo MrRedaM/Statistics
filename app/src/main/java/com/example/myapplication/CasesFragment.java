@@ -164,7 +164,7 @@ public class CasesFragment extends Fragment implements OnChartGestureListener,
         mActiveChart.setRotationEnabled(true);
         mActiveChart.setHighlightPerTapEnabled(true);
         mActiveChart.getLegend().setEnabled(false);
-        mActiveChart.setEntryLabelColor(Color.BLACK);
+        mActiveChart.setEntryLabelColor(Color.WHITE);
 
         //init line chart
         mCasesHistoryChart.getDescription().setEnabled(false);
@@ -338,7 +338,7 @@ public class CasesFragment extends Fragment implements OnChartGestureListener,
         final PieData data = new PieData(dataSet);
         //data.setValueFormatter(new PercentFormatter(mActiveChart));
         data.setValueTextSize(11f);
-        data.setValueTextColor(Color.BLACK);
+        data.setValueTextColor(Color.WHITE);
 
 
         // undo all highlights
