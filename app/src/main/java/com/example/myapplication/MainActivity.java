@@ -13,6 +13,7 @@ import android.view.WindowManager;
 import android.widget.FrameLayout;
 
 import com.example.myapplication.R;
+import com.google.android.gms.security.ProviderInstaller;
 import com.google.android.material.tabs.TabLayout;
 
 public class MainActivity extends AppCompatActivity {
@@ -32,13 +33,22 @@ public class MainActivity extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.toolbar);
         //setSupportActionBar(toolbar);
 
-
         mViewPager = findViewById(R.id.viewPager);
         mTabLayout = findViewById(R.id.tabLayout);
 
         getSupportFragmentManager().beginTransaction().replace(R.id.frameLayout, new TabFragment()).commit();
+
+        updateAndroidSecurityProvider();
     }
 
+    private void updateAndroidSecurityProvider() {
+        try {
+            ProviderInstaller.installIfNeeded(this);
+        }
+        catch (Exception e) {
+            e.getMessage();
+        }
+    }
 
 }
 

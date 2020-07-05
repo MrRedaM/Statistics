@@ -132,7 +132,6 @@ public class CasesFragment extends Fragment implements OnChartGestureListener,
         super.onActivityCreated(savedInstanceState);
 
         mQueue = Volley.newRequestQueue(getContext());
-        updateAndroidSecurityProvider();
 
         mRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
             @Override
@@ -526,15 +525,6 @@ public class CasesFragment extends Fragment implements OnChartGestureListener,
         };
         // Install the all-trusting host verifier
         HttpsURLConnection.setDefaultHostnameVerifier(allHostsValid);
-    }
-
-    private void updateAndroidSecurityProvider() {
-        try {
-            ProviderInstaller.installIfNeeded(getContext());
-        }
-        catch (Exception e) {
-            e.getMessage();
-        }
     }
 
     @Override
