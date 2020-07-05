@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <attr name="appBackground" format="reference"/>
+
+    <attr name="titlesColor" format="color"/>
+
+    <attr name="numbersColors" format="color"/>
+
+    <attr name="textOnBackground" format="color"/>
+
+    <attr name="tabSelectedTextColor" format="color"/>
+
+    <attr name="refreshArrowColor" format="color"/>
+
+    <attr name="pieColor1" format="color"/>
+
+    <attr name="pieTransparentColor" format="color"/>
+    
+</resources>

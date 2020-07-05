@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="appBackground">@color/default_bg</item>
+        <item name="titlesColor">@color/gradient_start</item>
+        <item name="numbersColors">@color/black</item>
+        <item name="tabTextColor">@color/black</item>
+        <item name="tabSelectedTextColor">@color/gradient_start</item>
+        <item name="pieColor1">@color/light_blue</item>
+        <item name="pieTransparentColor">@color/white</item>
+    </style>
+
+    <style name="AppTheme1" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="appBackground">@drawable/main_color_gradiant</item>
+        <item name="titlesColor">@color/white</item>
+        <item name="numbersColors">@color/white</item>
+        <item name="tabTextColor">@color/white</item>
+        <item name="tabSelectedTextColor">@color/white</item>
+        <item name="pieColor1">@color/light_blue</item>
+        <item name="pieTransparentColor">@color/white</item>
+    </style>
+
+
+</resources>
